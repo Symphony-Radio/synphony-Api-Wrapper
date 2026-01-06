@@ -1,0 +1,57 @@
+{
+  "name": "symphony-radio-api",
+  "version": "0.1.0",
+  "description": "Symphony Radio API wrapper.",
+  "keywords": [
+    "symphony",
+    "radio",
+    "api",
+    "wrapper",
+    "typescript",
+    "rsas"
+  ],
+  "license": "MIT",
+  "author": "Keiran Chippendale",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Symphony-Radio/synphony-Api-Wrapper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Symphony-Radio/synphony-Api-Wrapper/issues"
+  },
+  "homepage": "https://github.com/Symphony-Radio/synphony-Api-Wrapper#readme",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "eslint": "^9.17.0",
+    "typescript": "^5.7.3",
+    "tsup": "^8.3.5",
+    "vitest": "^2.1.8"
+  }
+}
